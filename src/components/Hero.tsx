@@ -49,10 +49,8 @@ const HeroSection = () => {
 
         {/* Marquee brands with fade edges */}
         <div className="absolute bottom-5 left-0 w-full py-6 z-30">
-          <div className="relative md:w-1/2 md:ml-[5.5rem] overflow-hidden">
-            <div className="pointer-events-none absolute top-0 left-0 h-full md:w-16 bg-gradient-to-r from-black to-transparent z-40" />
-            <div className="pointer-events-none absolute top-0 right-0 h-full w-16 bg-gradient-to-l from to-transparent z-40" />
-            <div className="flex w-max animate-marquee">
+          <div className="relative md:w-1/2 mx-6 md:ml-[5.5rem] overflow-hidden con-kit-component-marquee--fade-edge">
+            <div className="flex w-max items-center animate-marquee">
               {[...brands, ...brands, ...brands, ...brands].map((src, idx) => (
                 <img
                   key={idx}
