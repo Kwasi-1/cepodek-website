@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import logo from "@/assets/images/logo.png";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -34,6 +35,16 @@ export default function Header() {
             </a>
           ))}
         </nav>
+
+        <div className="hidden md:flex items-center space-x-2">
+          <a
+            href="tel:+233540128958"
+            className="hover:scale-110 transition-transform duration-300"
+          >
+            <Icon icon={`ic:twotone-whatsapp`} className="h-6 w-6 text-white" />
+          </a>
+          <span className="text-base text-white">+233 54 012 8958</span>
+        </div>
 
         {/* Mobile Menu */}
         <div className="md:hidden">
