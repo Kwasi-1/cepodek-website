@@ -19,13 +19,16 @@ const About = () => {
               corner of Ghana. We don’t just sell — we supply confidence,
               consistency, and care.
             </p>
-            <button className="text-base rounded px-6 py-4 bg-black text-white">
+            <a
+              href="#contact"
+              className="text-base rounded px-6 py-4 bg-black text-white"
+            >
               Learn More About Us
-            </button>
+            </a>
           </div>
 
           {/* Image Grid */}
-          <div className="w-full md:w-1/2 grid grid-col-1 md:grid-cols-2 gap-6">
+          <div className="w-full md:w-1/2 grid grid-col-1 lg:grid-cols-2 gap-6">
             <img
               src="https://images.unsplash.com/photo-1573496267526-08a69e46a409?auto=format&fit=crop&q=80"
               alt="Salon 1"
@@ -34,12 +37,12 @@ const About = () => {
             <img
               src="https://images.unsplash.com/photo-1573496267526-08a69e46a409?auto=format&fit=crop&q=80"
               alt="Salon 2"
-              className="hidden md:block object-cover w-full h-72"
+              className="hidden lg:block object-cover w-full h-72"
             />
             <img
               src="https://images.unsplash.com/photo-1573496267526-08a69e46a409?auto=format&fit=crop&q=80"
               alt="Salon 3"
-              className="hidden md:block object-cover w-full h-72"
+              className="hidden lg:block object-cover w-full h-72"
             />
             <img
               src="https://images.unsplash.com/photo-1573496267526-08a69e46a409?auto=format&fit=crop&q=80"

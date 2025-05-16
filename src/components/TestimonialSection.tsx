@@ -53,6 +53,7 @@ const testimonials = [
 const TestimonialSection = () => {
   return (
     <section
+      id="testimonials"
       className="relative py-20 bg-cover bg-center bg-no-repeat text-white"
       style={{
         backgroundImage: `url(${Customers})`,

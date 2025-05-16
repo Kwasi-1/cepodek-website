@@ -1,14 +1,14 @@
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import logo from "@/assets/images/logo.png";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Products", href: "/products" },
-  { label: "Contact", href: "/contact" },
+  { label: "About Us", href: "/#about" },
+  { label: "Services", href: "/#services" },
+  { label: "Products", href: "/#products" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Header() {
@@ -25,13 +25,13 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8 text-base font-normal">
           {navLinks.map((link) => (
-            <Link
+            <a
               key={link.label}
-              to={link.href}
+              href={link.href}
               className={`transition-colors text-white`}
             >
               {link.label}
-            </Link>
+            </a>
           ))}
         </nav>
 
@@ -47,9 +47,9 @@ export default function Header() {
               </div>
               <nav className="flex flex-col space-y-4 text-gray-700 font-medium">
                 {navLinks.map((link) => (
-                  <Link
+                  <a
                     key={link.label}
-                    to={link.href}
+                    href={link.href}
                     className={`transition-colors duration-300 ${
                       pathname === link.href
                         ? "text-accent font-medium"
@@ -57,7 +57,7 @@ export default function Header() {
                     }`}
                   >
                     {link.label}
-                  </Link>
+                  </a>
                 ))}
               </nav>
             </SheetContent>

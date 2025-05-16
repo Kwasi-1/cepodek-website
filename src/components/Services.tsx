@@ -48,7 +48,10 @@ const services = [
 function Services() {
   return (
     <div>
-      <div className="text-center font-semibold py-6 text-4xl w-full bg-[#262626] text-white border-t">
+      <div
+        id="services"
+        className="text-center font-semibold py-6 text-4xl w-full bg-[#262626] text-white border-t"
+      >
         What We Offer
       </div>
       {services.map((section, index) => (

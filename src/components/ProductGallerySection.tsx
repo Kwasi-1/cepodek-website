@@ -22,7 +22,10 @@ const products = [
 
 export default function ProductGallerySection() {
   return (
-    <section className="py-16 px-4 md:px-10 xl:px-16 container mx-auto">
+    <section
+      id="products"
+      className="py-16 px-4 md:px-10 xl:px-16 container mx-auto"
+    >
       <div className="max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-3xl md:text-4xl xl:pt-10 xl:text-5xl font-bold mb-2">
           Our Featured Products
@@ -53,7 +56,12 @@ export default function ProductGallerySection() {
       </div>
 
       <div className="text-center mt-12">
-        <button className="text-base px-6 py-4 rounded bg-black text-white font-medium hover:bg-gray-800 transition">
+        <button
+          onClick={() =>
+            window.open("https://hub.foundry-platform.app/", "_blank")
+          }
+          className="text-base px-7 py-4.5 rounded bg-black text-white font-medium hover:bg-gray-800 transition"
+        >
           View All Our Products
         </button>
       </div>
