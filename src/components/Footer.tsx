@@ -4,13 +4,10 @@ import { Link } from "react-router-dom";
 
 const quickLinks = [
   { label: "Home", href: "/" },
-  { label: "Investment", href: "/investments" },
-  {
-    label: "Loan",
-    href: "/loans",
-  },
-  { label: "About Us", href: "/about" },
-  { label: "Support", href: "/support" },
+  { label: "About Us", href: "/#about" },
+  { label: "Services", href: "/#services" },
+  { label: "Products", href: "/#products" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const socialLinks = [
@@ -31,14 +28,11 @@ export default function Footer() {
         {/* Contact Info */}
         <div className="flex flex-col gap-4 text-[15px] col-span-1 lg:col-span-2  sm:text-base lg:text-lg leading-[150%] font-[300]">
           <div>
-            <p>info@ubuntucapitalgh.com</p>
-            <p>www.ubuntucapitalgh.com</p>
-          </div>
-          <div>
             <p>P.O. Box CT 4561, Cantonments, Accra Ghana</p>
             <p># 23 1st Freetown Link Okponglo, Accra, Ghana</p>
           </div>
-          <div>+233 302 421429 · +233 507 697966</div>
+          <div>+233 302 421429 </div>
+          <div>+233 507 697966</div>
         </div>
 
         {/* Quick Links */}
@@ -80,8 +74,7 @@ export default function Footer() {
       </div>
 
       <div className="text-center font-light text-sm text-[#E4E5E7]/60 mt-6 px-4">
-        &copy; {new Date().getFullYear()} Ubuntu Capital Microfinance. All
-        rights reserved.
+        &copy; {new Date().getFullYear()} Cepodek. All rights reserved.
       </div>
     </footer>
   );
