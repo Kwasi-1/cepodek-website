@@ -19,12 +19,12 @@ const ServicesSection = ({
 }: ServicesSectionProps) => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
-  const layoutDirection = alignRight ? "flex-row-reverse" : "flex-row";
+  const layoutDirection = alignRight ? "md:flex-row-reverse" : "md:flex-row";
 
   return (
     <section
       id={id}
-      className={`container mx-auto flex flex-col md:flex-${layoutDirection} items-center justify-center text-black p-6 md:py-12 md:px-32 gap-6 md:gap-12 lg:gap-16`}
+      className={`container mx-auto flex flex-col ${layoutDirection} items-center justify-center text-black p-6 md:py-12 md:px-32 gap-6 md:gap-12 lg:gap-16`}
       style={{ fontFamily: "Inter" }}
     >
       {/* Image */}
