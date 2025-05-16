@@ -39,7 +39,7 @@ export default function Header() {
         <div className="md:hidden">
           <Sheet>
             <SheetTrigger>
-              <Menu className="h-6 w-6 text-gray-700" />
+              <Menu className="h-6 w-6" />
             </SheetTrigger>
             <SheetContent side="left" className="w-1/2 min-w-64 p-6 bg-white">
               <div className="mb-4">
