@@ -41,9 +41,7 @@ const ServicesSection = ({
       {/* Text Content */}
       {imageLoaded && (
         <div className="w-full md:w-1/2">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
-            {title}
-          </h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">{title}</h2>
 
           <p className="mb-6 text-base sm:text-lg">{description}</p>
 

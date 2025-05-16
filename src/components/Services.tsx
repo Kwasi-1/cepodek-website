@@ -50,7 +50,7 @@ function Services() {
     <div>
       <div
         id="services"
-        className="text-center font-semibold py-6 text-4xl w-full"
+        className="text-center font-bold py-6 text-4xl lg:text-5xl w-full"
       >
         What We Offer
       </div>
