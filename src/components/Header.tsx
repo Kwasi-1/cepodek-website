@@ -15,7 +15,7 @@ export default function Header() {
   const pathname = useLocation().pathname;
 
   return (
-    <header className={`w-full relative z-50 top-0 text-white`}>
+    <header className={`w-full relative z-50 top-0 bg-transparent `}>
       <div className="container mx-auto px-4 lg:px-8 py-3 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center font-bold space-x-2 text-3xl">
@@ -28,7 +28,7 @@ export default function Header() {
             <Link
               key={link.label}
               to={link.href}
-              className={`transition-colors `}
+              className={`transition-colors text-white`}
             >
               {link.label}
             </Link>
@@ -39,7 +39,7 @@ export default function Header() {
         <div className="md:hidden">
           <Sheet>
             <SheetTrigger>
-              <Menu className="h-6 w-6" />
+              <Menu className="h-6 w-6 text-white" />
             </SheetTrigger>
             <SheetContent side="left" className="w-1/2 min-w-64 p-6 bg-white">
               <div className="mb-4">
