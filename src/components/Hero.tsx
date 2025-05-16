@@ -20,8 +20,8 @@ const HeroSection = () => {
       />
 
       {/* Gradient overlay */}
-      <div className="absolute top-0 bottom-0 left-0 w-2/3 bg-gradient-to-r from-black/80 to-transparent"></div>
-      <div className="absolute top-0 right-0 left-0 h-1/2 bg-gradient-to-b from-black/80 to-black-40"></div>
+      <div className="absolute top-0 bottom-0 left-0 w-full md:w-2/3 bg-gradient-to-r from-black/80 to-transparent"></div>
+      <div className="absolute top-0 right-0 left-0 h-2/3 md:h-1/2 bg-gradient-to-b from-black/80 to-black-40"></div>
 
       <div className="relative container mx-auto h-full">
         <Header />
@@ -49,11 +49,9 @@ const HeroSection = () => {
 
         {/* Marquee brands with fade edges */}
         <div className="absolute bottom-5 left-0 w-full py-6 z-30">
-          <div className="relative w-1/2 ml-[5.5rem] overflow-hidden">
-            {/* Left & Right Fades */}
-            <div className="pointer-events-none absolute top-0 left-0 h-full w-16 bg-gradient-to-r from-black to-transparent z-40" />
+          <div className="relative md:w-1/2 md:ml-[5.5rem] overflow-hidden">
+            <div className="pointer-events-none absolute top-0 left-0 h-full md:w-16 bg-gradient-to-r from-black to-transparent z-40" />
             <div className="pointer-events-none absolute top-0 right-0 h-full w-16 bg-gradient-to-l from to-transparent z-40" />
-            {/* Marquee content */}
             <div className="flex w-max animate-marquee">
               {[...brands, ...brands, ...brands, ...brands].map((src, idx) => (
                 <img
