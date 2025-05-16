@@ -49,7 +49,9 @@ export default function ProductCarousel() {
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
   useEffect(() => {
-    if (!emblaApi) return;
+    if (!emblaApi) {
+      return undefined;
+    }
 
     const onSelect = () => {
       setCanScrollPrev(emblaApi.canScrollPrev());
@@ -59,7 +61,9 @@ export default function ProductCarousel() {
     emblaApi.on("select", onSelect);
     onSelect();
 
-    return () => emblaApi.off("select", onSelect);
+    return () => {
+      emblaApi.off("select", onSelect);
+    };
   }, [emblaApi]);
 
   return (

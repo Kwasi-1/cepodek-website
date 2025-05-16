@@ -1,19 +1,20 @@
 import About from "@/components/About";
 import HeroSection from "@/components/Hero";
-import HeroCards from "@/components/HeroCards";
-import Products from "@/components/Products";
+import ProductGallerySection from "@/components/ProductGallerySection";
 import Services from "@/components/Services";
-import WhyChooseUs from "@/components/WhyChooseUs";
+import StoreLocatorSection from "@/components/StoreLocatorSection";
+import TestimonialSection from "@/components/TestimonialSection";
 
 function Landing() {
   return (
     <div className="min-h-screen">
       <HeroSection />
-      <HeroCards />
-      <WhyChooseUs />
+
       <About />
-      <Products />
       <Services />
+      <ProductGallerySection />
+      <TestimonialSection />
+      <StoreLocatorSection />
     </div>
   );
 }

@@ -31,7 +31,7 @@ export default function Header() {
     <header
       className={`w-full fixed z-50 top-0 ${
         showBorder
-          ? "border-b border-gray-200 bg-white text-gray-700"
+          ? "border-b border-gray-200 bg-gray-50 text-gray-700"
           : " text-white"
       }`}
     >
@@ -48,11 +48,7 @@ export default function Header() {
             <Link
               key={link.label}
               to={link.href}
-              className={`transition-colors ${
-                pathname === link.href
-                  ? "text-accent font-[500]"
-                  : "hover:text-blue-600 font-[300]"
-              }`}
+              className={`transition-colors `}
             >
               {link.label}
             </Link>

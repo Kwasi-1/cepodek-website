@@ -2,12 +2,12 @@ function WhyChooseUs() {
   return (
     <div>
       <section className="bg-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start justify-between">
-          <div className="mb-10 md:mb-0 max-w-xl">
-            <h2 className="text-3xl font-bold text-gray-900 leading-snug">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-10 flex flex-col md:flex-row items-start justify-between">
+          <div className="mb-10 md:mb-0 max-w-3xl ">
+            {/* <h2 className="text-3xl font-bold text-gray-900 leading-snug">
               Why Choose Us
-            </h2>
-            <p className="mt-4 text-lg text-gray-700">
+            </h2> */}
+            <p className="mt-4 text-3xl font-semibold text-gray-700 leading-[150%]">
               Discover a wide range of top-quality products, trusted suppliers,
               and seamless service tailored to help your FMCG business thrive.
             </p>

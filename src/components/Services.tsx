@@ -1,4 +1,7 @@
 import ServicesSection from "./ServiceSection";
+import delivery from "@/assets/images/delivery.jpg";
+import wholesale from "@/assets/images/wholesale.jpg";
+import retail from "@/assets/images/retail.jpg";
 
 const services = [
   {
@@ -12,7 +15,7 @@ const services = [
       "Convenient store locations — Easily accessible in key areas in Accra.",
       "Customer support — Friendly staff ready to assist in-store and by phone.",
     ],
-    image: "/images/retail.jpg", // Replace with actual asset
+    image: retail,
     icon: "mdi:storefront-outline",
   },
   {
@@ -26,7 +29,7 @@ const services = [
       "Reliable stock levels — We maintain inventory to meet demand quickly.",
       "Tailored service — Account support and flexible fulfillment options.",
     ],
-    image: "/images/wholesale.jpg", // Replace with actual asset
+    image: wholesale,
     icon: "solar:box-outline",
   },
   {
@@ -40,7 +43,7 @@ const services = [
       "Real-time customer support — WhatsApp, phone, and live chat available.",
       "Track your order — Stay informed every step of the way.",
     ],
-    image: "/images/delivery.jpg", // Replace with actual asset
+    image: delivery,
     icon: "mdi:truck-delivery-outline",
   },
 ];
@@ -48,6 +51,9 @@ const services = [
 function Services() {
   return (
     <div>
+      <div className="text-center font-semibold py-6 text-4xl w-full bg-[#262626] text-white border-t">
+        What We Offer
+      </div>
       {services.map((section, index) => (
         <ServicesSection
           key={section.id}
