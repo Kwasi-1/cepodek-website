@@ -41,7 +41,7 @@ const HeroSection = () => {
                 window.open("https://hub.foundry-platform.app/", "_blank")
               }
               size="lg"
-              className="bg-white cursor-pointer text-black hover:bg-gray-200 font-semibold text-lg px-12 py-7"
+              className="bg-white cursor-pointer text-black hover:bg-gray-200 font-semibold text-lg px-11 py-6.5"
             >
               Shop with us
             </Button>
