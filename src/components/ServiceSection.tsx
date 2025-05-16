@@ -1,9 +1,4 @@
-import { motion } from "framer-motion";
-
-const textVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.2 } },
-};
+import { useState } from "react";
 
 interface ServicesSectionProps {
   id: string;
@@ -22,63 +17,47 @@ const ServicesSection = ({
   image,
   alignRight,
 }: ServicesSectionProps) => {
-  const containerAlignmentClass = alignRight ? "ml-auto" : "mr-auto";
+  const [imageLoaded, setImageLoaded] = useState(false);
 
-  const sectionStyle = {
-    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(${image})`,
-    fontFamily: "Inter",
-  };
+  const containerAlignmentClass = alignRight ? "ml-auto" : "mr-auto";
 
   return (
     <section
       id={id}
-      className="relative flex items-center justify-center bg-black text-white bg-cover bg-center p-3 md:p-10"
-      style={sectionStyle}
+      className="relative flex items-center justify-center bg-black text-white bg-cover bg-center p-3 md:p-10 overflow-hidden"
     >
-      <div className="container">
-        <div
-          className={`relative z-10 p-8 sm:p-12 md:p-16 lg:w-2/3 xl:w-7/12 rounded-lg ${containerAlignmentClass}`}
-        >
-          <motion.h2
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl pb-4 md:pb-6 lg:pb-8 font-bold mb-4 flex items-center"
-            variants={textVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-          >
-            {title}
-            {/* <Icon
-              icon={icon}
-              className="ml-2 h-10 w-10 sm:h-12 sm:w-12 md:h-16 md:w-16 lg:h-20 lg:w-20"
-            /> */}
-          </motion.h2>
+      {/* Background Image */}
+      <img
+        src={image}
+        alt=""
+        loading="lazy"
+        className="absolute inset-0 w-full h-full object-cover brightness-50"
+        onLoad={() => setImageLoaded(true)}
+      />
 
-          <motion.p
-            className="mb-4 text-base sm:text-lg"
-            variants={textVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-          >
-            {description}
-          </motion.p>
+      {/* Dark overlay (optional, already added via brightness-50 on image) */}
+      <div className="absolute inset-0 bg-black opacity-50"></div>
 
-          <ul className="list-disc list-inside mb-8 text-base sm:text-lg">
-            {points.map((point, index) => (
-              <motion.li
-                key={index}
-                className="mb-2 md:mb-4"
-                variants={textVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
-              >
-                <span>{point}</span>
-              </motion.li>
-            ))}
-          </ul>
+      {/* Content */}
+      {imageLoaded && (
+        <div className="relative z-10 container">
+          <div
+            className={`p-8 sm:p-12 md:p-16 lg:w-2/3 xl:w-7/12 rounded-lg ${containerAlignmentClass}`}
+          >
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              {title}
+            </h2>
+
+            <p className="mb-6 text-base sm:text-lg">{description}</p>
+
+            <ul className="list-disc list-inside text-base sm:text-lg space-y-2">
+              {points.map((point, index) => (
+                <li key={index}>{point}</li>
+              ))}
+            </ul>
+          </div>
         </div>
-      </div>
+      )}
     </section>
   );
 };
