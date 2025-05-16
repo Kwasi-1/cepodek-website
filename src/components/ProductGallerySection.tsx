@@ -81,7 +81,7 @@ export default function ProductGallerySection() {
           onClick={() =>
             window.open("https://hub.foundry-platform.app/", "_blank")
           }
-          className="text-base px-7 py-4.5 rounded-md bg-black text-white font-medium hover:bg-gray-800 transition"
+          className="text-base px-7 py-4.5 rounded-md bg-black text-white font-medium cursor-pointer hover:bg-gray-800 transition"
         >
           View All Our Products
         </button>

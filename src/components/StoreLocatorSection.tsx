@@ -20,7 +20,7 @@ export default function StoreLocatorSection() {
                 onClick={() =>
                   window.open("https://hub.foundry-platform.app/", "_blank")
                 }
-                className="text-base lg:px-7  lg:py-4 rounded-md border bg-black text-white font-medium hover:bg-white hover:text-black transition duration-300"
+                className="text-base px-6 py-3.5 lg:px-7 lg:py-4 rounded-md border bg-black text-white font-medium hover:bg-white hover:text-black transition duration-300"
               >
                 Shop Now
               </button>

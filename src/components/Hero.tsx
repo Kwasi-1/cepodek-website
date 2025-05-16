@@ -37,9 +37,11 @@ const HeroSection = () => {
           </p>
           <div className="mt-8">
             <Button
-              onClick={() => window.scrollTo(0, 0)}
+              onClick={() =>
+                window.open("https://hub.foundry-platform.app/", "_blank")
+              }
               size="lg"
-              className="bg-white text-black hover:bg-gray-200 font-semibold text-lg px-12 py-7"
+              className="bg-white cursor-pointer text-black hover:bg-gray-200 font-semibold text-lg px-12 py-7"
             >
               Shop with us
             </Button>
