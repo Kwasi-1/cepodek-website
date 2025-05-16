@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import hero from "@/assets/images/hero.png";
 import gino from "@/assets/images/gino.png";
 import jumbo from "@/assets/images/jumbo.png";
 import kivo from "@/assets/images/kivo.png";
@@ -14,14 +15,13 @@ const HeroSection = () => {
       <div
         className="absolute inset-0 bg-cover bg-center scale-105 blur-[1px] brightness-75"
         style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1466721591366-2d5fba72006d?auto=format&fit=crop&q=80')",
+          backgroundImage: `url(${hero})`,
         }}
       />
 
       {/* Gradient overlay */}
-      <div className="absolute top-0 bottom-0 left-0 w-full md:w-2/3 bg-gradient-to-r from-black/80 to-transparent"></div>
-      <div className="absolute top-0 right-0 left-0 h-2/3 md:h-1/2 bg-gradient-to-b from-black/80 to-black-40"></div>
+      {/* <div className="absolute top-0 bottom-0 left-0 w-full md:w-2/3 bg-gradient-to-r from-black/80 to-transparent"></div>
+      <div className="absolute top-0 right-0 left-0 h-2/3 md:h-1/2 bg-gradient-to-b from-black/80 to-black-40"></div> */}
 
       <div className="relative container mx-auto h-full">
         <Header />
