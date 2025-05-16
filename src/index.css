@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;500;600;700&display=swap');
+
 @import "tailwindcss";
 @import "tw-animate-css";
 @import 'leaflet/dist/leaflet.css';
@@ -6,7 +9,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: inter, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -187,12 +190,16 @@ body {
     @apply text-[#225EA6];
   }
 
-  @keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-25%); }
 }
 
 .animate-marquee {
   display: inline-block;
   animation: marquee 20s linear infinite;
+}
+
+.font-kalam {
+  font-family: 'Kalam', cursive;
 }

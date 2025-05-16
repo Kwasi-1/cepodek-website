@@ -1,5 +1,5 @@
 import Footer from "./components/Footer";
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import Landing from "./pages/Landing";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import BackToTopButton from "./components/BackToTopButton";
@@ -16,7 +16,7 @@ function App() {
 const AppContent = () => {
   return (
     <div className="bg-white min-h-screen">
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="*" element={<NotFound />} />

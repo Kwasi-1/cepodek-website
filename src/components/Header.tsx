@@ -1,6 +1,3 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
@@ -8,38 +5,21 @@ import logo from "@/assets/images/logo.png";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "Investments", href: "/investments" },
-  { label: "Loans", href: "/loans" },
   { label: "About Us", href: "/about" },
-  { label: "Support", href: "/support" },
+  { label: "Services", href: "/services" },
+  { label: "Products", href: "/products" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Header() {
-  const [showBorder, setShowBorder] = useState(false);
   const pathname = useLocation().pathname;
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setShowBorder(window.scrollY > 0);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <header
-      className={`w-full fixed z-50 top-0 ${
-        showBorder
-          ? "border-b border-gray-200 bg-gray-50 text-gray-700"
-          : " text-white"
-      }`}
-    >
+    <header className={`w-full relative z-50 top-0 text-white`}>
       <div className="container mx-auto px-4 lg:px-8 py-3 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center font-bold space-x-2 text-3xl">
-          {/* <img src={logo} alt="Ubuntu Capital Logo" className="h-12 w-auto" /> */}
-          Cepodek
+          <img src={logo} alt="Ubuntu Capital Logo" className="h-12 w-auto" />
         </div>
 
         {/* Desktop Navigation */}
