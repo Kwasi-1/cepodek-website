@@ -1,9 +1,8 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import Customers from "@/assets/images/customers.jpg";
-import "swiper/css";
-import "swiper/css/autoplay";
+// import "swiper/css";
+// import "swiper/css/autoplay";
 
 const testimonials = [
   {

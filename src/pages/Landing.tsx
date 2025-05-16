@@ -3,7 +3,7 @@ import HeroSection from "@/components/Hero";
 import ProductGallerySection from "@/components/ProductGallerySection";
 import Services from "@/components/Services";
 import StoreLocatorSection from "@/components/StoreLocatorSection";
-import TestimonialSection from "@/components/TestimonialSection";
+// import TestimonialSection from "@/components/TestimonialSection";
 
 function Landing() {
   return (
@@ -13,7 +13,7 @@ function Landing() {
       <About />
       <Services />
       <ProductGallerySection />
-      <TestimonialSection />
+      {/* <TestimonialSection /> */}
       <StoreLocatorSection />
     </div>
   );
