@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import Customers from "@/assets/images/customers.jpg";
@@ -96,11 +97,11 @@ const TestimonialSection = () => {
                 </div>
                 <p className="text-sm italic mb-6 text-white">{t.message}</p>
                 <div className="flex flex-col items-center">
-                  <img
+                  {/* <img
                     src={t.image}
                     alt={t.name}
                     className="w-14 h-14 rounded-full object-cover mb-2 border border-white"
-                  />
+                  /> */}
                   <h4 className="text-white font-semibold">{t.name}</h4>
                 </div>
               </div>

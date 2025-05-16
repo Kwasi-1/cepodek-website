@@ -16,7 +16,6 @@ const services = [
       "Customer support — Friendly staff ready to assist in-store and by phone.",
     ],
     image: retail,
-    icon: "mdi:storefront-outline",
   },
   {
     id: "wholesale-supply",
@@ -30,7 +29,6 @@ const services = [
       "Tailored service — Account support and flexible fulfillment options.",
     ],
     image: wholesale,
-    icon: "solar:box-outline",
   },
   {
     id: "online-delivery",
@@ -44,7 +42,6 @@ const services = [
       "Track your order — Stay informed every step of the way.",
     ],
     image: delivery,
-    icon: "mdi:truck-delivery-outline",
   },
 ];
 
@@ -62,7 +59,6 @@ function Services() {
           description={section.description}
           points={section.points}
           image={section.image}
-          icon={section.icon}
           alignRight={index % 2 === 0}
         />
       ))}
