@@ -59,7 +59,10 @@ export default function ProductGallerySection() {
       {/* Tablet and up: Show all products */}
       <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
         {products.map(({ src, name }, index) => (
-          <div key={index} className="overflow-hidden h-full rounded">
+          <div
+            key={index}
+            className="overflow-hidden min-h-[300px] h-full rounded"
+          >
             <div className="group border h-full max-h-[400px] rounded bg-white shadow-md hover:shadow-xl transition">
               <img
                 src={src}
