@@ -21,7 +21,7 @@ const About = () => {
             </p>
             <a
               href="#contact"
-              className="text-base rounded px-6 py-4 bg-black text-white"
+              className="text-base rounded-md px-6 py-4 lg:px-7 lg:py-4.5 bg-black text-white"
             >
               Learn More About Us
             </a>
