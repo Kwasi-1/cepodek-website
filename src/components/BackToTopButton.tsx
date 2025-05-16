@@ -26,7 +26,7 @@ function BackToTopButton() {
       onClick={scrollToTop}
       className={`${
         isVisible ? "fixed" : "hidden"
-      } hidden md:block bottom-6 right-6 bg-white text-[#402013] hover:text-white p-4 rounded-full shadow-xl hover:bg-primary/80 transition z-50`}
+      } hidden md:block bottom-6 right-6 bg-[#FFA900] hover:bg-gray-200 text-[#402013] p-4 rounded-full shadow-xl transition duration-300 z-50`}
     >
       <Icon icon="iconoir:fast-arrow-up" className="text-xl font-thin" />
     </button>
