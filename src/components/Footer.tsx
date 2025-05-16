@@ -19,20 +19,28 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer className="bg-black text-white py-8">
-      <div className="max-w-7xl mx-auto py-16 lg:py-24 border-b border-white/50 px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+      <div className="max-w-7xl mx-auto py-16 lg:py-24 border-b border-white/50 px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Logo */}
         <div className="col-span-1">
           <img src={logo} alt="Logo" className="h-12 sm:h-16 mb-4" />
         </div>
 
         {/* Contact Info */}
-        <div className="flex flex-col gap-4 text-[15px] col-span-1 lg:col-span-2  sm:text-base lg:text-lg leading-[150%] font-[300]">
+        <div className="flex flex-col gap-4 text-[15px] col-span-1  sm:text-base lg:text-lg leading-[150%] font-[300]">
           <div>
-            <p>P.O. Box CT 4561, Cantonments, Accra Ghana</p>
-            <p># 23 1st Freetown Link Okponglo, Accra, Ghana</p>
+            <p className="sm:text-base lg:text-lg flex items-center gap-1 mb-4">
+              <Icon icon={`famicons:location-outline`} className="h-6 w-6" />
+              Location 1: Oyarifa
+            </p>
+            <p className="sm:text-base lg:text-lg flex items-center gap-1">
+              <Icon icon={`famicons:location-outline`} className="h-6 w-6" />
+              Location 2: Madina
+            </p>
           </div>
-          <div>+233 302 421429 </div>
-          <div>+233 507 697966</div>
+          <div className="sm:text-base lg:text-lg flex items-center gap-1">
+            <Icon icon={`mdi-light:phone`} className="h-6 w-6" />
+            +233 54 012 8958{" "}
+          </div>
         </div>
 
         {/* Quick Links */}
