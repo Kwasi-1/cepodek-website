@@ -8,7 +8,7 @@ export default function StoreLocatorSection() {
           <div className="flex flex-col md:flex-row gap-8 p-10 max-w-7xl lg:max-w-6xl mx-auto md:space-y-10">
             {/* Left Content */}
             <div className="w-full md:w-4/7 lg:w-2/3">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[40px] font-bold text-gray-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
                 Find our FMCG store near you
               </h2>
               <p className="text-gray-600 text-lg lg:text-xl mb-6">
