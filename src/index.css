@@ -59,6 +59,7 @@
   :root {
     color: #213547;
     background-color: #ffffff;
+    scroll-behavior: smooth;
   }
   a:hover {
     color: #747bff;
@@ -187,7 +188,7 @@ body {
     @apply text-[#ACACAC];
   }
   .text-accent {
-    @apply text-[#225EA6];
+    @apply text-[#FFA900];
   }
 
 @keyframes marquee {
