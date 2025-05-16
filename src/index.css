@@ -61,12 +61,6 @@
     background-color: #ffffff;
     scroll-behavior: smooth;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
 
 
@@ -171,15 +165,6 @@ body {
 
 .bg-primary {
     @apply bg-black;
-  }
-  .bg-hover{
-    @apply bg-[#1A4A84];
-  }
-  .bg-secondary {
-    @apply bg-[#2A69AC];
-  }
-  .bg-accent {
-    @apply bg-[#2C7DA0];
   }
   .text-main {
     @apply text-red-600;
