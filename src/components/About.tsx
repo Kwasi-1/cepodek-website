@@ -4,7 +4,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="flex flex-col md:flex-row items-center gap-16">
           <div className="w-full md:w-1/2">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+            <h2 className="text-4xl md:text-[42px] font-bold text-gray-900 leading-tight mb-6">
               Committed to Keeping Ghana Moving — One Product at a Time
             </h2>
             <p className="text-lg leading-[150%] text-gray-700 mb-6">
@@ -25,7 +25,7 @@ const About = () => {
           </div>
 
           {/* Image Grid */}
-          <div className="w-full md:w-1/2 grid grid-cols-2 gap-6">
+          <div className="w-full md:w-1/2 grid grid-col-1 md:grid-cols-2 gap-6">
             <img
               src="https://images.unsplash.com/photo-1573496267526-08a69e46a409?auto=format&fit=crop&q=80"
               alt="Salon 1"
