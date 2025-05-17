@@ -36,7 +36,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="hidden md:flex items-center space-x-2">
+        <div className="hidden lg:flex items-center space-x-2">
           <a
             href="tel:+233540128958"
             className="hover:scale-110 transition-transform duration-300"
