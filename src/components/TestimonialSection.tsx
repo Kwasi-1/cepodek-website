@@ -6,24 +6,21 @@ import { useEffect, useState } from "react";
 const testimonials = [
   {
     name: "Mary Weber",
-    image: "/images/user1.jpg",
     rating: 5,
     message:
-      "Use whitespace for a clean and focused look, allowing content to breathe and guiding users' attention to key elements.",
+      "Cepodek’s quality and consistency never fail. Their products are now a staple in my home—we simply can’t do without them.",
   },
   {
     name: "Katherine Koch",
-    image: "/images/user2.jpg",
     rating: 4,
     message:
-      "This template is beautifully crafted and easy to customize. It helped us increase conversions significantly!",
+      "As a small shop owner, I’ve seen a real boost in customer satisfaction. Cepodek delivers on both quality and reliability.",
   },
   {
     name: "Lukas Müller",
-    image: "/images/user3.jpg",
     rating: 5,
     message:
-      "Clean UI and fantastic performance. Our team and customers both love it!",
+      "What I love about Cepodek is the trust factor. I know exactly what I’m getting every time—top-notch products at great value.",
   },
 ];
 
@@ -42,12 +39,17 @@ const TestimonialSection = () => {
       style={{ backgroundImage: `url(${Customers})` }}
     >
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
-      <div className="relative max-w-7xl mx-auto text-center px-4 z-10 con-kit-component-marquee--fade-edge">
-        <h2 className="text-4xl font-bold mb-4">What our customers say</h2>
-        <p className="text-lg text-muted-foreground mb-12">
-          Hear from our satisfied users who trust and love our FMCG products.
+      <div className="relative max-w-7xl mx-auto text-center px-4 z-10">
+        <h2 className="text-4xl font-bold mb-4">
+          Trusted by Thousands Across Ghana
+        </h2>
+        <p className="text-lg text-gray-200 mb-12 max-w-xl mx-auto">
+          From busy households to retail shelves, hear how Cepodek products make
+          a difference in everyday lives.
         </p>
+      </div>
 
+      <div className="relative max-w-7xl mx-auto text-center px-4 z-10 con-kit-component-marquee--fade-edge">
         {isClient && (
           <div className="overflow-hidden w-full relative con-kit-component-marquee--fade-edge">
             <div className="flex w-max animate-marquee gap-8 px-4">
@@ -56,7 +58,7 @@ const TestimonialSection = () => {
                   key={index}
                   className="min-w-[300px] max-w-sm p-6 hover:scale-[1.02] transition-all duration-300"
                 >
-                  <div className="text-yellow-400 text-xl mb-2">
+                  <div className="text-white text-xl mb-2">
                     {"★".repeat(t.rating) + "☆".repeat(5 - t.rating)}
                   </div>
                   <p className="text-sm italic mb-6 text-white">{t.message}</p>
