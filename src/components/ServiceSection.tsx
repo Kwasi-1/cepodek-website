@@ -24,8 +24,7 @@ const ServicesSection = ({
   return (
     <section
       id={id}
-      className={`container mx-auto flex flex-col ${layoutDirection} items-center justify-center text-black p-6 md:py-12 md:px-32 gap-6 md:gap-12 lg:gap-16`}
-      style={{ fontFamily: "Inter" }}
+      className={`container mx-auto flex flex-col ${layoutDirection} items-center justify-center text-black p-6 md:py-12 lg:px-32 gap-6 md:gap-12 lg:gap-16`}
     >
       {/* Image */}
       <div className="w-full md:w-1/2">
@@ -33,7 +32,7 @@ const ServicesSection = ({
           src={image}
           alt={title}
           loading="lazy"
-          className="w-full h-auto rounded-lg object-cover shadow-lg"
+          className="w-full h-auto rounded-md object-cover shadow-lg "
           onLoad={() => setImageLoaded(true)}
         />
       </div>
