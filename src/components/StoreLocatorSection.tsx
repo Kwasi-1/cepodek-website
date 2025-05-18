@@ -32,7 +32,7 @@ export default function StoreLocatorSection() {
                 <Phone className="text-gray-500 mt-1" size={24} />
                 <div>
                   <p className="text-lg font-medium text-gray-700">
-                    +1 555-123-4567
+                    +233 54 012 8958
                   </p>
                   <p className="text-lg text-gray-500">Customer Support</p>
                 </div>
@@ -40,12 +40,14 @@ export default function StoreLocatorSection() {
 
               <div className="flex items-start space-x-3">
                 <MapPin className="text-gray-500 mt-1" size={24} />
-                <p className="text-lg text-gray-700">135 West 52nd Street</p>
+                <p className="text-lg text-gray-700">Madina Market, Ghana</p>
               </div>
 
               <div className="flex items-start space-x-3">
                 <MapPin className="text-gray-500 mt-1" size={24} />
-                <p className="text-lg text-gray-700">365 Clinton Street</p>
+                <p className="text-lg text-gray-700">
+                  Oyarifa, Near Special Ice, Ghana
+                </p>
               </div>
             </div>
           </div>
